@@ -27,3 +27,17 @@ hooks()->add_filter('sms_gateways', function($gateways) {
 });
 
 
+hooks()->add_filter('get_dashboard_widgets', 'limoosms_register_dashboard_widgets');
+function limoosms_register_dashboard_widgets($widgets)
+{
+    // Add today's appointments widget if enabled
+    // if (get_option('appointly_today_widget_enabled') !== '1') {
+    if (get_option('sms_limoosms_token') !== '') {
+        $widgets[] = [
+            'container' => 'top-12',
+            'path'      => 'limoo_sms/widget',
+        ];
+    }
+
+    return $widgets;
+}
