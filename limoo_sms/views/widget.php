@@ -25,24 +25,25 @@ if ( $httpcode == 200 ){
 
 ?>
 <div class="widget relative" id="widget-limoosms-credit" data-name="مانده اعتبار پنل پیامکی">
-      <div class="row">
-          <div class="col-md-12">
-              <div class="panel_s">
-                  <div class="panel-body padding-10">
-                      <div class="widget-dragger ui-sortable-handle"></div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel_s">
+                <div class="panel-body padding-10">
+                    <div class="widget-dragger ui-sortable-handle"></div>
                         <p class="tw-font-semibold tw-flex tw-items-center tw-mb-0 tw-space-x-1.5 rtl:tw-space-x-reverse tw-p-1.5">
                             <span class="tw-text-neutral-700">مانده اعتبار پنل پیامکی</span>
-                      </p>
+                        </p>
                         <hr class="-tw-mx-3 tw-mt-3 tw-mb-6">
                         <?php print $message; ?>
                         <?php //print app_format_money($output2, 'IRR'); ?><br>
                         <div class="tw-text-center tw-mt-3">
-                            <a href="https://sms.eta.co.ir/" class="btn btn-primary btn-sm">
+                            <a href="https://sms.eta.co.ir/" target="_blank" class="btn btn-primary btn-sm">
                                 شارژ پنل اکسیر پیامک
                             </a>
                         </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
